@@ -1,0 +1,24 @@
+# System and Environment
+.DS_Store
+Thumbs.db
+.venv/
+__pycache__/
+*.pyc
+
+# IDE/Editor
+.vscode/
+*.code-workspace
+
+# Agent/AI
+.gemini/
+.agent/
+Artifacts/
+
+# Build/Generated
+*.epub
+*.pdf
+# Keep the site build if it's the source for netlify, otherwise ignore if it's build output.
+# Assuming 'Site' is the source directory based on file list.
+
+# Archives (Optional, uncomment if these are big or backup only)
+# Archive/
