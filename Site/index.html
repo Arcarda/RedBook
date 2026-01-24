@@ -15,12 +15,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-
-    <style>
-        :root {
-            --font-heading: 'Crimson Pro', serif;
-        }
-    </style>
 </head>
 
 <body>
@@ -34,7 +28,7 @@
                 <span>Self-Command</span>
             </div>
 
-            <h1>Taking the Bridge.</h1>
+            <h1 class="glitch-hover">Taking the Bridge.</h1>
 
             <p>
                 Your brain has a mutiny problem.
@@ -43,8 +37,8 @@
             </p>
 
             <div style="margin-top: 2rem;">
-                <a href="#buy" class="btn">Get the Manual</a>
-                <a href="#about" class="btn btn-outline" style="margin-left: 10px;">Read the Brief</a>
+                <a href="#buy" class="btn glitch-hover">Get the Manual</a>
+                <a href="#about" class="btn btn-outline glitch-hover" style="margin-left: 10px;">Read the Brief</a>
             </div>
         </div>
     </header>
@@ -56,19 +50,21 @@
                 <div>
                     <span class="mono" style="color: var(--color-accent);">The Problem</span>
                     <h2 style="font-size: 2.5rem; margin-top: 10px; margin-bottom: 20px;">You are not broken.<br>You are
-                        mutinous.</h2>
+                        <span style="color: var(--color-accent);">mutinous</span>.</h2>
                     <p style="margin-bottom: 20px; color: var(--color-text-muted);">
                         Inside every person are two forces: the <strong>Operator</strong> (the rational commander) and
                         the <strong>Passenger</strong> (the reactive child).
                     </p>
                     <p style="color: var(--color-text-muted);">
                         We spend 95% of our lives letting the Passenger drive. We eat what we shouldn't, say what we
-                        regret, and sabotage our own success. The Red Book is a set of military-grade protocols to put
-                        the Operator back in charge.
+                        regret, and sabotage our own success. The Red Book is a set of <span class="mono"
+                            style="color: #fff;">military-grade protocols</span> to put the Operator back in charge.
                     </p>
                 </div>
                 <div style="background: var(--color-surface); padding: 40px; border: 1px solid var(--color-border);">
-                    <h3 class="mono" style="margin-bottom: 20px;">OPERATOR'S ORDERS</h3>
+                    <h3 class="mono"
+                        style="margin-bottom: 20px; color: var(--color-accent); border-bottom: 1px solid var(--color-border); padding-bottom: 10px;">
+                        OPERATOR'S ORDERS</h3>
                     <ul class="feature-list">
                         <li><strong>The H.A.L.T. Protocol:</strong> Stop emotional spirals instantly.</li>
                         <li><strong>Morning Watch:</strong> Start every day with a mission.</li>
@@ -86,21 +82,19 @@
             <div class="grid-2">
                 <!-- Book 1 -->
                 <div>
+                    <div class="book-preview">
+                        <img src="assets/field_manual.png" alt="The Red Book Field Manual Cover">
+                    </div>
                     <h3 style="margin-bottom: 10px;">The Field Manual</h3>
                     <p class="mono" style="margin-bottom: 20px;">The Theory & Protocols</p>
-                    <div
-                        style="min-height: 300px; background: #222; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #555;">
-                        [Cover Image Placeholder]
-                    </div>
                 </div>
                 <!-- Book 2 -->
                 <div>
+                    <div class="book-preview">
+                        <img src="assets/field_journal.png" alt="The Official Field Journal Cover">
+                    </div>
                     <h3 style="margin-bottom: 10px;">The Field Journal</h3>
                     <p class="mono" style="margin-bottom: 20px;">The 90-Day Tactical Log</p>
-                    <div
-                        style="min-height: 300px; background: #222; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #555;">
-                        [Journal Image Placeholder]
-                    </div>
                 </div>
             </div>
         </div>
@@ -114,7 +108,7 @@
                 style="margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--color-text-muted);">
                 Available now on Amazon in Paperback and Kindle. The Official Field Journal is sold separately.
             </p>
-            <a href="#" class="btn" style="padding: 16px 32px; font-size: 1.1rem;">Buy on Amazon &rarr;</a>
+            <a href="#" class="btn glitch-hover" style="padding: 16px 32px; font-size: 1.1rem;">Buy on Amazon &rarr;</a>
         </div>
     </section>
 
@@ -125,8 +119,7 @@
                 <a href="#">Privacy</a> &bull; <a href="#">Contact</a>
                 <br><br>
                 <a href="https://vayne-consultation.netlify.app" class="mono"
-                    style="color: var(--color-accent); text-decoration: none;">A Vayne
-                    Consultations Project</a>
+                    style="color: var(--color-accent); text-decoration: none;">A Vayne Consultations Project</a>
             </div>
         </div>
     </footer>
