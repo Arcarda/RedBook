@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTION GUIDE: The Red Book & Field Journal</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #8B0000;
+            border-bottom: 3px solid #8B0000;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.6em;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        strong {
+            color: #222;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #e1e1e1;
+            color: #c7254e;
+            font-size: 0.9em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f8f8f8;
+            font-weight: 600;
+            color: #333;
+        }
+
+        table tr:hover {
+            background-color: #fafafa;
+        }
+
+        ul, ol {
+            margin-bottom: 1.2em;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+        
+        li > ul {
+            margin-top: 0.5em;
+        }
+
+        blockquote {
+            background: #f9f9f9;
+            border-left: 5px solid #8B0000;
+            margin: 20px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+        }
+
+        .highlight {
+            background-color: #fff8c4;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PRODUCTION GUIDE: The Red Book & Field Journal</h1>
+    
+    <p><strong>Objective:</strong> Assemble the print-ready files for "The Red Book" (Manual) and its companion "Field Journal" using Affinity Publisher.</p>
+
+    <hr>
+
+    <h2>1. THE STRATEGY</h2>
+    <p>You are producing <strong>two distinct books</strong> that share the same DNA (Size, Fonts, Styles).</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Spec</th>
+                <th>Book I: The Manual</th>
+                <th>Book II: The Field Journal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Purpose</strong></td>
+                <td>Reading (Text Heavy)</td>
+                <td>Writing (Interactive)</td>
+            </tr>
+            <tr>
+                <td><strong>Page Size</strong></td>
+                <td>5" x 7"</td>
+                <td>5" x 7"</td>
+            </tr>
+            <tr>
+                <td><strong>Margins</strong></td>
+                <td>0.75" Inner / 0.5" Outer</td>
+                <td>0.75" Inner / 0.5" Outer</td>
+            </tr>
+            <tr>
+                <td><strong>Primary Master</strong></td>
+                <td><strong>Master A</strong> (Text Frames)</td>
+                <td><strong>Master C</strong> (SVG Forms)</td>
+            </tr>
+            <tr>
+                <td><strong>Content File</strong></td>
+                <td><code>Red_Book_Manu_Import_Perfect.docx</code></td>
+                <td><code>Field_Journal_Import_Perfect.docx</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2. THE ASSET KIT</h2>
+    <p>Ensure these files are ready in your workspace:</p>
+
+    <h3>Content (Text)</h3>
+    <ul>
+        <li><code>Red_Book_Manu_Import_Perfect.docx</code> (The main manuscript, styled)</li>
+        <li><code>Field_Journal_Import_Perfect.docx</code> (Intro, SITREPs, Prompts)</li>
+    </ul>
+
+    <h3>Layout (Visuals)</h3>
+    <ul>
+        <li><code>Affinity_Asset_Master_A_Frame.svg</code> (Standard Text Frame)</li>
+        <li><code>Affinity_Asset_Master_B_Divider.svg</code> (Chapter Divider)</li>
+        <li><code>Affinity_Asset_Master_C_Left.svg</code> (Morning Watch layout)</li>
+        <li><code>Affinity_Asset_Master_C_Right.svg</code> (Evening Debrief layout)</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. PHASE I: THE RED BOOK (MANUAL)</h2>
+    <p><strong>Goal:</strong> Create the text-heavy reading book.</p>
+
+    <h3>Step 1: Document Setup</h3>
+    <ol>
+        <li><strong>New Document:</strong>
+            <ul>
+                <li><strong>Size:</strong> 5 in x 7 in.</li>
+                <li><strong>DPI:</strong> 300.</li>
+                <li><strong>Facing Pages:</strong> Checked.</li>
+                <li><strong>Margins:</strong> Inner 0.75", Outer 0.5", Top 0.5", Bottom 0.625".</li>
+                <li><strong>Bleed:</strong> 0.125" (All sides).</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Step 2: Master Pages</h3>
+    <ol>
+        <li><strong>Create "Master A" (Standard Body):</strong>
+            <ul>
+                <li><strong>Drag & Drop</strong> <code>Affinity_Asset_Master_A_Left.svg</code> onto the LEFT spread. Center it.</li>
+                <li><strong>Drag & Drop</strong> <code>Affinity_Asset_Master_A_Right.svg</code> onto the RIGHT spread. Center it.</li>
+                <li><strong>Draw Text Frames (Crucial for Flow):</strong>
+                    <ul>
+                        <li>Draw a Text Frame on the <strong>Left Page</strong>, snapping to margins.</li>
+                        <li>Draw a Text Frame on the <strong>Right Page</strong>, snapping to margins.</li>
+                        <li><strong>LINK THEM:</strong> Click the triangle "Link" icon on the bottom-right of the Left frame, then click the Right frame. This ensures text flows Left -> Right.</li>
+                    </ul>
+                </li>
+                <li><strong>Running Header (Frame):</strong> Draw a small text box <em>above</em> the top black line on <strong>both pages</strong>.
+                    <ul>
+                        <li><strong>Position:</strong> X: Snap to Margin, Y ≈ 0.3".</li>
+                        <li><strong>Size:</strong> W: 3.75", H: 0.25".</li>
+                        <li><strong>Style:</strong> <code>Header - Running</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Page Number (Frame):</strong> Draw a small text box <em>below</em> the bottom footer bracket on <strong>both pages</strong>.
+                    <ul>
+                        <li><strong>Position:</strong> X: Snap to Margin, Y ≈ 6.75".</li>
+                        <li><strong>Size:</strong> W: 3.75", H: 0.25".</li>
+                        <li><strong>Style:</strong> <code>Folio</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Create "Master B" (Chapter Breaks):</strong>
+            <ul>
+                <li><strong>Drag & Drop</strong> <code>Affinity_Asset_Master_B_Divider.svg</code> onto the Right Page.</li>
+                <li>Remove headers/footers for this Master.</li>
+                <li>This provides the "Anchor" icon and Divider line automatically.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Step 3: Content Import</h3>
+    <ol>
+        <li>Go to Page 1. Apply <strong>Master B</strong> (Title Page).</li>
+        <li>Go to Page 3 (First content). Apply <strong>Master A</strong>.</li>
+        <li><strong>File > Place...</strong> -> Select <code>Red_Book_Manu_Import_Perfect.docx</code>.</li>
+        <li>Click inside the text frame.</li>
+        <li><strong>Shift + Click</strong> the "Text Flow" triangle (bottom right) to auto-generate pages for the whole book.</li>
+    </ol>
+
+    <h3>Step 4: Styling</h3>
+    <ol>
+        <li>Open the <strong>Text Styles</strong> panel.</li>
+        <li>Use <strong>Find and Replace</strong> to map styles if needed (Word "Heading 1" usually maps automatically to Affinity "Heading 1").</li>
+        <li><em>Tip:</em> Style the <code>OperatorsOrder</code> paragraphs with a box/border to make them stand out.</li>
+    </ol>
+
+    <hr>
+
+    <h2>4. PHASE II: THE FIELD JOURNAL</h2>
+    <p><strong>Goal:</strong> Create the interactive notebook.</p>
+
+    <h3>Step 1: Document Setup</h3>
+    <ul>
+        <li><em>Same settings as The Red Book (5x7).</em></li>
+    </ul>
+
+    <h3>Step 2: Master Pages (The Secret Sauce)</h3>
+    <ol>
+        <li><strong>Create "Master C" (The Daily Spread):</strong>
+            <ul>
+                <li><strong>Left Page:</strong> Drag & Drop <code>Affinity_Asset_Master_C_Left.svg</code>. Center it.</li>
+                <li><strong>Right Page:</strong> Drag & Drop <code>Affinity_Asset_Master_C_Right.svg</code>. Center it.</li>
+                <li><em>Note:</em> These SVGs are the "Lines" you write on. They are now part of the page structure.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Step 3: Layout Construction</h3>
+    <ol>
+        <li><strong>Intro Section (Pages 1-10):</strong>
+            <ul>
+                <li>Apply <strong>Master A</strong> (Text).</li>
+                <li>Place <code>Field_Journal_Import_Perfect.docx</code> (The "Logbook Philosophy" section).</li>
+            </ul>
+        </li>
+        <li><strong>The Deployment (Pages 11-100):</strong>
+            <ul>
+                <li>Insert 90 pages.</li>
+                <li>Apply <strong>Master C</strong> to all of them.</li>
+                <li><em>Result:</em> You now have 90 days of "Morning/Evening" spreads ready to print.</li>
+            </ul>
+        </li>
+        <li><strong>Weekly Reviews:</strong>
+            <ul>
+                <li>Every 7 days, insert a spread with <strong>Master A</strong>.</li>
+                <li>Paste the "Weekly S.I.T.R.E.P." text from the DOCX file here.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>5. ART DIRECTION (Next Steps)</h2>
+    <p>Once the text and layout are locked:</p>
+    <ol>
+        <li>Leave <strong>Empty Frames</strong> where visuals should go.</li>
+        <li>Refer to <code>Art_Direction_Plan.md</code> for the "Shot List" (Diagrams, Atmospheric Plates).</li>
+        <li>We will generate these assets later and drop them into the empty frames.</li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 40px; font-weight: bold; font-size: 1.2em; color: #8B0000;">Ready to Build.</p>
+</div>
+
+</body>
+</html>

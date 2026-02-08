@@ -1,0 +1,10 @@
+<svg width="360pt" height="504pt" viewBox="0 0 360 504" xmlns="http://www.w3.org/2000/svg">
+    <!-- Top Divider -->
+    <line x1="54" y1="100" x2="324" y2="100" stroke="black" stroke-width="4"/>
+    
+    <!-- Bottom Anchor Icon (Centered in Content Area) -->
+    <!-- Content Center is 54 + 135 = 189 -->
+    <g transform="translate(189, 400)">
+        <path d="M-20,0 Q0,30 20,0 M0,-20 L0,20 M-10,-10 L10,-10" stroke="black" stroke-width="2" fill="none"/>
+    </g>
+    </svg>

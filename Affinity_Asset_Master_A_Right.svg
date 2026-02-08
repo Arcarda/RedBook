@@ -1,0 +1,6 @@
+<svg width="360pt" height="504pt" viewBox="0 0 360 504" xmlns="http://www.w3.org/2000/svg">
+    <!-- Header Line -->
+    <line x1="54" y1="36" x2="324" y2="36" stroke="black" stroke-width="2"/>
+    <!-- Footer Line -->
+    <line x1="144" y1="468" x2="234" y2="468" stroke="black" stroke-width="1"/>
+    </svg>

@@ -13,7 +13,7 @@ def create_epub():
     book.add_author('Manual of Self-Command')
 
     # Read manuscript
-    manuscript_path = r'O:\Antigravity\Workspaces\Writing\RedBook\Red_Book_Manu_FINAL.md'
+    manuscript_path = 'Red_Book_Manu_FINAL.md'
     with open(manuscript_path, 'r', encoding='utf-8') as f:
         text = f.read()
 
@@ -39,7 +39,7 @@ def create_epub():
     book.add_item(c1)
 
     # Add Cover
-    cover_path = r'O:\Antigravity\Workspaces\Writing\RedBook\Publishing\cover_minimal_2_black.png'
+    cover_path = r'Publishing\03_Assets\Cover\cover_minimal_2_black.png'
     if os.path.exists(cover_path):
         with open(cover_path, 'rb') as f:
             book.set_cover("cover.png", f.read())
@@ -60,7 +60,7 @@ def create_epub():
     book.spine = ['nav', c1]
 
     # Write EPUB
-    output_path = r'O:\Antigravity\Workspaces\Writing\RedBook\Red_Book_Field_Manual.epub'
+    output_path = 'Red_Book_Field_Manual.epub'
     epub.write_epub(output_path, book, {})
     print(f"EPUB created successfully at: {output_path}")
 

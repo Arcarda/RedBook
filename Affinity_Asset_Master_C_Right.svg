@@ -1,0 +1,32 @@
+<svg width="360pt" height="504pt" viewBox="0 0 360 504" xmlns="http://www.w3.org/2000/svg">
+    <!-- Guides -->
+    <rect x="54" y="36" width="270" height="423" fill="none" stroke="#ccc" stroke-dasharray="4"/>
+    
+    <!-- Title -->
+    <text x="189" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#8B0000" text-anchor="middle">EVENING DEBRIEF</text>
+    <line x1="54" y1="80" x2="324" y2="80" stroke="black" stroke-width="2"/>
+    
+    <!-- Section 1 -->
+    <g transform="translate(54, 120)">
+        <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#8B0000" text-anchor="start">1. THE WIN</text>
+        <text x="0" y="20" font-family="Garamond" font-size="11" fill="black">One thing I did well today.</text>
+        <line x1="0" y1="40" x2="270" y2="40" stroke="black" stroke-width="1"/>
+        <line x1="0" y1="65" x2="270" y2="65" stroke="black" stroke-width="1"/>
+    </g>
+    
+    <!-- Section 2 -->
+    <g transform="translate(54, 210)">
+        <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#8B0000" text-anchor="start">2. THE VARIANCE</text>
+        <text x="0" y="20" font-family="Garamond" font-size="11" fill="black">Where did I drift? Why?</text>
+        <line x1="0" y1="40" x2="270" y2="40" stroke="black" stroke-width="1"/>
+        <line x1="0" y1="65" x2="270" y2="65" stroke="black" stroke-width="1"/>
+    </g>
+    
+    <!-- Rating Box -->
+    <g transform="translate(54, 350)">
+        <rect x="0" y="0" width="270" height="60" fill="#f5f5f5" stroke="black" stroke-width="1"/>
+        <text x="135" y="20" font-family="Arial" font-size="10" font-weight="bold" fill="black" text-anchor="middle">DAILY RATING</text>
+        <text x="135" y="45" font-family="Garamond" font-size="11" fill="black" text-anchor="middle">Sleep: ___ / Fuel: ___ / Move: ___</text>
+    </g>
+    
+    </svg>

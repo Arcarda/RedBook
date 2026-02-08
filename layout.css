@@ -1,0 +1,152 @@
+/* Global Print Settings */
+@page {
+    size: 5in 7in;
+    margin-top: 0.5in;
+    margin-bottom: 0.625in;
+    marks: crop cross;
+    bleed: 0.125in;
+}
+
+@page :first {
+    margin-top: 2in;
+    /* Drop title on first page */
+}
+
+@page :left {
+    margin-left: 0.5in;
+    /* Outer */
+    margin-right: 0.75in;
+    /* Inner */
+}
+
+@page :right {
+    margin-left: 0.75in;
+    /* Inner */
+    margin-right: 0.5in;
+    /* Outer */
+}
+
+body {
+    font-family: "Garamond", "Adobe Garamond Pro", "Crimson Text", serif;
+    line-height: 1.35;
+    /* Approx 14.85pt on 11pt */
+    color: #1a1a1a;
+    font-size: 11pt;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Typography */
+h1 {
+    font-family: "Arial", sans-serif;
+    color: #8B0000;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 10px;
+    margin-top: 2em;
+    font-size: 24pt;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    font-size: 16pt;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    color: #8B0000;
+    margin-top: 1.2em;
+    font-size: 13pt;
+    page-break-after: avoid;
+}
+
+p {
+    margin-bottom: 1em;
+    orphans: 2;
+    widows: 2;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #8B0000;
+    margin: 1.5em 2em;
+    padding-left: 1em;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Operator's Orders Specifics */
+.operators-order {
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 2em 0;
+    background-color: #f5f5f5;
+    page-break-inside: avoid;
+}
+
+.operators-order h3 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.operators-order ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Field Manual / Journal Specifics */
+.morning-watch,
+.evening-debrief,
+.sitrep,
+.emergency-log {
+    page-break-before: always;
+    border: 1px solid #ccc;
+    height: 95%;
+    /* Fill usage area */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.morning-watch h2,
+.evening-debrief h2,
+.sitrep h2,
+.emergency-log h2 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+}
+
+.form-line {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2px;
+    min-height: 1.2em;
+}
+
+.form-line.short {
+    width: 100px;
+    display: inline-block;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}

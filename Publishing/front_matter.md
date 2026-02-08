@@ -65,41 +65,41 @@ Printed in [Country of Printing]
 
 **(Auto-generate this in Affinity Publisher, but here is the structure)**
 
-**PART I: THE SITUATION**
+**SECTION I: THE COMMAND**
+0. **Day Zero** — How to Start
+1. **Who Is Steering?** — The Passenger vs. The Operator
+2. **The Mechanics of Sabotage** — The Mutiny
+3. **The Engine Room** — Amygdala & Dopamine
+4. **Mission Control** — Values vs. Goals
 
-1. The Mutiny
-2. The Hardware
-3. The Passenger vs. The Operator
+**SECTION II: THE SYSTEMS**
+5. **The Hardware Reset** — Sleep, Food, Movement
+6. **The Field Journal Protocol** — Logbook Philosophy
+7. **Radar Calibration** — Mindfulness & The Void
+8. **The Reactor Core** — Creativity as Fuel
 
-**PART II: THE PREPARATION**
-4. Mission Control
-5. The Hardware Reset
-6. The Red Book Protocol
+**SECTION III: THE ENVIRONMENT**
+9. **The Bridge** — Sanctuary & Visual Noise
+10. **Signal Discipline** — Phone Zones & Greyscale
+11. **Logistics** — Career, Money, Freedom Fund
 
-**PART III: THE EXECUTION**
-7. Radar Calibration
-8. The Morning Watch
-9. The Bridge
-10. Signal Discipline
-11. The Evening Debrief
+**SECTION IV: THE FLEET**
+12. **Fleet Maneuvers** — Social Circles & Boundaries
+13. **The Co-Captain Protocol** — Relationships & Limerence
+14. **The Empty Chairs** — Grief & Survivor’s Guilt
+15. **Dropping the Anchor** — Resentment & Forgiveness
 
-**PART IV: THE ENGAGEMENT**
-12. Taking the Bridge
-13. Rules of Engagement
-14. Counter-Insurgency
-15. Dropping the Anchor
+**SECTION V: THE STORMS**
+16. **Damage Control** — Relapse & The Shame Spiral
+17. **Protocol Mayday** — Panic Attacks & Crisis
+18. **The Hull Damage** — Trauma & Healing
 
-**PART V: THE DAMAGE CONTROL**
-16. Damage Control
-17. Protocol: MAYDAY
-18. The Hull Damage
-
-**PART VI: THE LONG HAUL**
-19. Standing Orders
-20. The Captain's Log
+**SECTION VI: THE LONG HAUL**
+19. **The Long Voyage** — Maintenance Mode
 
 **APPENDICES**
-The Dry Dock (Tools & Templates)
-Medevac (Resources)
-Operational Intelligence (Reading List)
-Glossary
+- **Intelligence Dossier** (Diagnostic Metrics)
+- **The Dry Dock** (Tools & Templates)
+- **MEDEVAC** (Emergency Resources)
+- **Operational Intelligence** (Reading List)
+- **Glossary**

@@ -1,0 +1,5094 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Field Journal</title>
+        <style>
+            /* Global Print Settings */
+@page {
+    size: A5;
+    margin: 20mm;
+    marks: crop cross;
+    bleed: 3mm;
+}
+
+@page :first {
+    margin-top: 10cm;
+    /* Drop title on first page */
+}
+
+@page :left {
+    margin-left: 15mm;
+    margin-right: 20mm;
+}
+
+@page :right {
+    margin-left: 20mm;
+    margin-right: 15mm;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    font-size: 11pt;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Typography */
+h1 {
+    font-family: "Arial", sans-serif;
+    color: #8B0000;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 10px;
+    margin-top: 2em;
+    font-size: 24pt;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    font-size: 16pt;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    color: #8B0000;
+    margin-top: 1.2em;
+    font-size: 13pt;
+    page-break-after: avoid;
+}
+
+p {
+    margin-bottom: 1em;
+    orphans: 2;
+    widows: 2;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #8B0000;
+    margin: 1.5em 2em;
+    padding-left: 1em;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Operator's Orders Specifics */
+.operators-order {
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 2em 0;
+    background-color: #f5f5f5;
+    page-break-inside: avoid;
+}
+
+.operators-order h3 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.operators-order ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Field Manual / Journal Specifics */
+.morning-watch,
+.evening-debrief,
+.sitrep,
+.emergency-log {
+    page-break-before: always;
+    border: 1px solid #ccc;
+    height: 95%;
+    /* Fill usage area */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.morning-watch h2,
+.evening-debrief h2,
+.sitrep h2,
+.emergency-log h2 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+}
+
+.form-line {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2px;
+    min-height: 1.2em;
+}
+
+.form-line.short {
+    width: 100px;
+    display: inline-block;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+            /* Specific overrides for visuals */
+            .page-break { page-break-after: always; }
+        </style>
+    </head>
+    <body>
+        
+    <div class="intro">
+        <h1>The Field Journal</h1>
+        <p>This is your operational log. It is not a diary. It is a tool for self-command.</p>
+        <div class="page-break" style="page-break-before: always;"></div>
+    </div>
+    <!-- Day 1 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 2 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 3 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 4 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 5 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 6 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 7 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 8 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 9 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 10 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 11 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 12 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 13 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 14 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 15 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 16 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 17 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 18 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 19 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 20 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 21 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 22 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 23 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 24 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 25 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 26 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 27 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 28 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 29 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 30 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 31 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 32 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 33 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 34 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 35 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 36 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 37 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 38 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 39 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 40 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 41 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 42 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 43 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 44 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 45 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 46 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 47 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 48 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 49 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 50 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 51 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 52 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 53 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 54 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 55 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 56 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 57 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 58 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 59 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 60 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 61 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 62 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 63 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 64 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 65 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 66 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 67 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 68 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 69 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 70 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 71 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 72 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 73 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 74 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 75 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 76 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 77 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 78 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 79 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 80 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 81 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 82 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 83 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 84 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+<div class="sitrep">
+    <h2>Weekly S.I.T.R.E.P.</h2>
+    <p><strong>Week of:</strong> <span class="form-line"></span></p>
+    
+    <h3>Wins This Week</h3>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>The Drift</h3>
+    <p>Where did the ship lose speed or course this week?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>Pattern Spotted</h3>
+    <p>What script did the Passenger use most?</p>
+    <span class="form-line"></span>
+    
+    <h3>Next Week Focus</h3>
+    <span class="form-line"></span>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+<div class="notes-page">
+    <h2>Field Notes</h2>
+    <!-- Ruled lines -->
+    <div style="background-image: repeating-linear-gradient(white 0px, white 29px, black 30px); height: 100%; width: 100%;"></div>
+</div>
+<!-- Day 85 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 86 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 87 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 88 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 89 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+<!-- Day 90 -->
+
+<div class="morning-watch">
+    <h2>Morning Watch</h2>
+    <p><strong>Day:</strong> <span class="form-line short"></span> &nbsp;&nbsp;&nbsp; <strong>Date:</strong> <span class="form-line short"></span></p>
+    
+    <p><strong>H.A.L.T. Check:</strong> <span class="checkbox"></span>Hungry <span class="checkbox"></span>Angry <span class="checkbox"></span>Lonely <span class="checkbox"></span>Tired</p>
+    
+    <h3>1. Primary Objective</h3>
+    <p>What is the ONE thing that makes today successful?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. Threat Assessment</h3>
+    <p>Where are the traps? (Calendar, events, triggers)</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Passenger Alert</h3>
+    <p>What is the resistance telling you right now?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <div style="flex-grow:1;"></div>
+    <p style="text-align:center; font-style:italic;">"Motion creates emotion."</p>
+</div>
+
+<div class="evening-debrief">
+    <h2>Evening Debrief</h2>
+    
+    <h3>1. The Win</h3>
+    <p>One thing I did well today.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>2. The Variance</h3>
+    <p>Where did I drift? Why?</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+    
+    <h3>3. Tomorrow's Anchor</h3>
+    <p>One commitment for tomorrow to sharpen the line.</p>
+    <span class="form-line"></span>
+    <span class="form-line"></span>
+
+    <div style="flex-grow:1;"></div>
+    <div class="operators-order" style="margin-bottom:0;">
+        <h3>Daily Rating</h3>
+        <p>Sleep: ___ / Fuel: ___ / Move: ___</p>
+    </div>
+</div>
+
+    </body>
+    </html>
+    
